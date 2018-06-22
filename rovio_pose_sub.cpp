@@ -170,6 +170,7 @@ void poseCallback(const geometry_msgs::PoseWithCovarianceStampedConstPtr& msg)
 {
     double time = msg->header.stamp.toSec();
     Eigen::Matrix4d pose;
+    pose.setIdentity();
     Eigen::Quaterniond eig_quat;
     eig_quat.x() = msg->pose.pose.orientation.x;
     eig_quat.y() = msg->pose.pose.orientation.y;
