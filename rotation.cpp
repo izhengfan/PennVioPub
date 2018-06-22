@@ -1,6 +1,6 @@
 // Allrights reserved.
 // Author: github.com/izhengfan (ZHENG, Fan)
-
+/// \brief calculating a quaterion from a rotation matrix
 
 #include <iostream>
 #include <Eigen/Geometry>
